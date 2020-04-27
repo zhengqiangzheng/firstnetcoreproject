@@ -1,0 +1,12 @@
+﻿@model WebApplication1.Models.CompanySummary
+<div class="small">
+    <div class="row h5" style="font-size:10px">@ViewBag.Title</div>
+    <div class="row">
+        <div class="col-md-8">Total Num</div>
+        <div class="col-md-4">@Model.EmployeeCount</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">Average Employee Count</div>
+        <div class="col-md-4">@Model.AverageDepartmentEmployeeCount</div>
+    </div>
+</div>

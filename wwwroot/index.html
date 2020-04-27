@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>hello world</h1>
+    <button onclick="handlclick()">click me</button>
+</body>
+<script>
+    const handlclick = () => {
+        console.log('begin')
+        axios.get('https://localhost:5001/hello/nihao').then(result => {
+            console.log(result)
+        })
+    }
+
+</script>
+</html>
